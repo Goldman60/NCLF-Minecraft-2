@@ -19,7 +19,7 @@ class page extends CI_Controller {
 		
 		//Populate data array
 		$data['title'] = ucfirst($page);
-		$data['style'] = array('sitewide');
+		$data['style'] = array('sitewide','nav');
 		
 		//Header
 		$this->load->view('templates/header',$data);

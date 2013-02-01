@@ -62,11 +62,11 @@ article {
 #withsidebar {
 	color:#BBB;
 	float:left;
-	width:600px;
+	width:550px;
 }
 
 #sidebar {
-	width:200px;
+	width:250px;
 	float: right;
 	
 	/* DEBUG */
