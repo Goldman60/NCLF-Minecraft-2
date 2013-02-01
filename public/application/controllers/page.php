@@ -21,24 +21,21 @@ class page extends CI_Controller {
 		$data['title'] = ucfirst($page);
 		$data['style'] = array('sitewide');
 		
-		//Determine if page has a sidebar or not
-		//applies the relevant CSS style to <article>
-		if(in_array($page, $hasSidebar)) {
-			$data['sidebar'] = "true";
-		} else {
-			$data['sidebar'] = "false";
-		}
-		
 		//Header
 		$this->load->view('templates/header',$data);
 		$this->load->view('templates/navigation',$data);
 		//Load up the body
 		$this->load->view('templates/body/start',$data);
 		
+		if(in_array($page, $hasSidebar)) {
+			$this->load->view('templates/sidebardiv/start');
+		}
+		
 		$this->load->view('page/'.$page, $data);
 		
 		//load the sidebar IF NEEDED
 		if(in_array($page, $hasSidebar)) {
+			$this->load->view('templates/sidebardiv/end');
 			$this->load->view('templates/sidebar');
 		}
 		

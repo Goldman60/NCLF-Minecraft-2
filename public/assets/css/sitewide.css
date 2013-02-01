@@ -1,14 +1,50 @@
 @CHARSET "UTF-8";
 
-header {
-	height:200px;
-	
+/********
+ Sitewide tag Overrides
+ ********/
+html, body {
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* disable margins for header tags,
+	Override on a case by case basis */
+h1,h2,h3 {
+	margin:0;
+}
+
+
+/***********
+ Structural Elements 
+ ***********/
+
+/* Uniform heights and widths */
+header, footer {
+	height: 160px;
+}
+header, footer, article, nav {
+	width: 800px;
+	margin:0 auto;
+}
+
+/* Other structure */
+header {	
 	/* DEBUG */
 	background-color:#F00;
 }
 
-footer {
+nav {
+	height:40px;
 	
+	/* DEBUG */
+	background-color:#00F;
+	color:#FFF;
+}
+
+footer {	
+	clear:both;
 	
 	/* DEBUG */
 	background-color:#000;
@@ -16,22 +52,22 @@ footer {
 }
 
 article {
+	min-height:500px;
 	
 	/* DEBUG */
 	background-color:#0f0;
 }
 
-article .sidebartrue {
-	
-	/* DEBUG */
-	background-color:#00F;
-}
-
-article .sidebarfalse {
-	
+/* With Sidebar */
+#withsidebar {
+	color:#BBB;
+	float:left;
+	width:600px;
 }
 
 #sidebar {
+	width:200px;
+	float: right;
 	
 	/* DEBUG */
 	background-color:#550;
