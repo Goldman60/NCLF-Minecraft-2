@@ -1,1 +1,1 @@
-<?php echo '<div id="body" class="body">';
+<?php echo'<article id="'.$title.'body" class="body">';

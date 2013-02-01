@@ -1,1 +1,1 @@
-<?php echo '</div>'."\r\n";
+<?php echo '</article>';

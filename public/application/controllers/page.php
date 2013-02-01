@@ -22,7 +22,7 @@ class page extends CI_Controller {
 		$this->load->view('templates/header',$data);
 		$this->load->view('templates/navigation',$data);
 		//Load up the body
-		$this->load->view('templates/body/start');
+		$this->load->view('templates/body/start',$data);
 		
 		$this->load->view('page/'.$page, $data);
 		
