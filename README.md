@@ -4,7 +4,7 @@ This is a general **work in progress**, live production code can be viewed at ht
 ##License(s)
 This code is Open Sourced by the Nerd Cave Liberation Front and AJ Fite under the following license(s):
 >NCLFMinecraft.org
->Copyright (C) 2012  A.J. Fite
+>Copyright (C) 2012-2013  A.J. Fite
 >
 >This program is free software: you can redistribute it and/or modify
 >it under the terms of the GNU General Public License as published by
