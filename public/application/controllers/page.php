@@ -12,11 +12,22 @@ class page extends CI_Controller {
 			show_404();
 		}
 		
+		$hasSidebar = array('home');
+		
 		//Load helper Libraries
 		$this->load->helper('html');
 		
 		//Populate data array
 		$data['title'] = ucfirst($page);
+		$data['style'] = array('sitewide');
+		
+		//Determine if page has a sidebar or not
+		//applies the relevant CSS style to <article>
+		if(in_array($page, $hasSidebar)) {
+			$data['sidebar'] = "true";
+		} else {
+			$data['sidebar'] = "false";
+		}
 		
 		//Header
 		$this->load->view('templates/header',$data);
@@ -26,8 +37,10 @@ class page extends CI_Controller {
 		
 		$this->load->view('page/'.$page, $data);
 		
-		//load the sidebar
-		$this->load->view('templates/sidebar');
+		//load the sidebar IF NEEDED
+		if(in_array($page, $hasSidebar)) {
+			$this->load->view('templates/sidebar');
+		}
 		
 		//End the body
 		$this->load->view('templates/body/end', $data);
