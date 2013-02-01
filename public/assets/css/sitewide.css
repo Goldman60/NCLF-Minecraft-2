@@ -1,19 +1,30 @@
 @CHARSET "UTF-8";
 
 header {
+	height:200px;
 	
+	/* DEBUG */
+	background-color:#F00;
 }
 
 footer {
 	
+	
+	/* DEBUG */
+	background-color:#000;
+	color:#FFF;
 }
 
 article {
 	
+	/* DEBUG */
+	background-color:#0f0;
 }
 
 article .sidebartrue {
 	
+	/* DEBUG */
+	background-color:#00F;
 }
 
 article .sidebarfalse {
@@ -22,4 +33,6 @@ article .sidebarfalse {
 
 #sidebar {
 	
+	/* DEBUG */
+	background-color:#550;
 }
