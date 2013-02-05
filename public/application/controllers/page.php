@@ -21,7 +21,7 @@ class page extends CI_Controller {
 		$this->load->model('server_query_model');
 			//Creative Server
 			try {
-				$this->server_query_model->connect("192.168.2.14");
+				$this->server_query_model->connect("192.168.2.14"); //INTERNAL ADDRESS
 				$data['CreativeInfo'] = $this->server_query_model->GetInfo();
 				$data['CreativePlayers'] = $this->server_query_model->GetPlayers();
 			} catch (MinecraftQueryException $e) {
@@ -30,12 +30,14 @@ class page extends CI_Controller {
 			
 			//FTB Server
 			try {
-				$this->server_query_model->connect("192.168.2.14",25566);
+				$this->server_query_model->connect("192.168.2.14",25566); //INTERNAL ADDRESS
 				$data['FTBInfo'] = $this->server_query_model->GetInfo();
 				$data['FTBPlayers'] = $this->server_query_model->GetPlayers();
 			} catch (MinecraftQueryException $e) {
 				$data['FTBError'] = $e;
 			}
+			
+		print_r($data['FTBInfo']);
 				
 		//Populate data array
 		$data['title'] = ucfirst($page);
