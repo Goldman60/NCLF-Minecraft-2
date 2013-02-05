@@ -37,7 +37,6 @@ class page extends CI_Controller {
 				$data['FTBError'] = $e;
 			}
 				
-		
 		//Populate data array
 		$data['title'] = ucfirst($page);
 		$data['style'] = array('sitewide','nav');
