@@ -1,1 +1,1 @@
-<h2>NCLF Minecraft Home</h2>
+<h2>Home</h2>

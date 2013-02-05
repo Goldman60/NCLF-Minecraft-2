@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 /********
  Sitewide tag Overrides
@@ -22,7 +22,11 @@ h1,h2,h3 {
 
 /* Uniform heights and widths */
 header, footer {
-	height: 160px;
+	/*height: 160px;*/
+	height:80px;
+	
+	background-color: #000;
+	color: #FFF;
 }
 header, footer, article, nav {
 	width: 800px;
@@ -31,31 +35,27 @@ header, footer, article, nav {
 
 /* Other structure */
 header {	
-	/* DEBUG */
-	background-color:#F00;
+	padding-top:60px;
+	text-indent: 50px;
 }
 
 nav {
-	height:40px;
+	height:30px;
+	background-color:#000;
 	
 	/* DEBUG */
-	background-color:#00F;
+	/* background-color:#00F; */
 	color:#FFF;
 }
 
 footer {	
+	padding-top:5px;
 	clear:both;
-	
-	/* DEBUG */
-	background-color:#000;
-	color:#FFF;
+	text-align:center;
 }
 
 article {
 	min-height:500px;
-	
-	/* DEBUG */
-	background-color:#0f0;
 }
 
 /* With Sidebar */

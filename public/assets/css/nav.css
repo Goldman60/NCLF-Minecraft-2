@@ -1,8 +1,27 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 /* Navigation */
+nav {
+}
+
 nav a {
 	display:inline-block;
+	background-color:red;
+	height:26px;
+	margin-left: 6px;
+	font-size:19px;
+	padding:2px 3px;
+	
+	color:#000;
+	
+}
+
+nav a:LINK {
+	text-decoration: none;
+}
+
+nav a:VISITED {
+	color:#000 !important;
 }
 
 /* Hightlighting */

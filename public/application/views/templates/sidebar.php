@@ -1,1 +1,3 @@
-<div id="sidebar">Sidebar</div>
+<div id="sidebar">
+<h2>Server Status</h2>
+</div>
