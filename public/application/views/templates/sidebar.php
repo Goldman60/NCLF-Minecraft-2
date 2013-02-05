@@ -1,5 +1,6 @@
 <div id="sidebar">
 <h2>Server Status</h2>
+<?php #FIXME: Server error handling ?>
 <div class="serverstats">
 	<h3>Creative</h3>
 	<p class="onlinecount"><?php echo $CreativeInfo['Players']; ?>/<?php echo $CreativeInfo['MaxPlayers']; ?> Players Online</p>
