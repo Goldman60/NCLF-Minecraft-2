@@ -14,6 +14,16 @@ html,body {
 h1,h2,h3 {
 	margin:0;
 }
+a:LINK {
+	color:#3399FF;
+	text-decoration:none;
+}
+a:HOVER {
+	text-decoration:underline;
+}
+a:VISITED {
+	color:3399FF;
+}
 
 
 /***********
