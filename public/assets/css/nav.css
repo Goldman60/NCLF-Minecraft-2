@@ -6,15 +6,19 @@ nav {
 
 nav a {
 	display:inline-block;
-	background-color:red;
+	background-color:#3399FF;
 	height:26px;
 	margin-left: 6px;
 	font-size:19px;
 	padding:2px 3px;
-	
 	color:#000;
-	
+	border-radius:6px 6px 0 0;
 }
+
+nav a:HOVER {
+	background-color:#30F !important;
+}
+
 
 nav a:LINK {
 	text-decoration: none;
@@ -26,5 +30,5 @@ nav a:VISITED {
 
 /* Hightlighting */
 nav#HomeNav a#HomeNavButton {
-	background-color:#fff;
+	background-color:#fff !important;
 }
