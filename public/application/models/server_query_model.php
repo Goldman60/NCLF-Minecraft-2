@@ -21,6 +21,10 @@ class server_query_model extends CI_Model
 	private $Players;
 	private $Info;
 	
+	function __construct() {
+		parent::__construct();
+	}
+	
 	public function Connect( $Ip, $Port = 25565, $Timeout = 3 )
 	{
 		if( !is_int( $Timeout ) || $Timeout < 0 )

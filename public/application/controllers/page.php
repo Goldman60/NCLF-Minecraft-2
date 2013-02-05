@@ -17,6 +17,27 @@ class page extends CI_Controller {
 		//Load helper Libraries
 		$this->load->helper('html');
 		
+		//Server Query stuff
+		$this->load->model('server_query_model');
+			//Creative Server
+			try {
+				$this->server_query_model->connect("192.168.2.14");
+				$data['CreativeInfo'] = $this->server_query_model->GetInfo();
+				$data['CreativePlayers'] = $this->server_query_model->GetPlayers();
+			} catch (MinecraftQueryException $e) {
+				$data['CreativeError'] = $e;
+			}
+			
+			//FTB Server
+			try {
+				$this->server_query_model->connect("192.168.2.14",25566);
+				$data['FTBInfo'] = $this->server_query_model->GetInfo();
+				$data['FTBPlayers'] = $this->server_query_model->GetPlayers();
+			} catch (MinecraftQueryException $e) {
+				$data['FTBError'] = $e;
+			}
+				
+		
 		//Populate data array
 		$data['title'] = ucfirst($page);
 		$data['style'] = array('sitewide','nav');
