@@ -26,6 +26,8 @@ class page extends CI_Controller {
 				$data['CreativePlayers'] = $this->server_query_model->GetPlayers();
 			} catch (MinecraftQueryException $e) {
 				$data['CreativeError'] = $e;
+			} catch (Exception $e) {
+				$data['CreativeError'] = "An unhandled exception has occured: ".$e;
 			}
 			
 			//FTB Server
@@ -35,6 +37,8 @@ class page extends CI_Controller {
 				$data['FTBPlayers'] = $this->server_query_model->GetPlayers();
 			} catch (MinecraftQueryException $e) {
 				$data['FTBError'] = $e;
+			} catch (Exception $e) {
+				$data['FTBError'] = "An unhandled exception has occured: ".$e;
 			}
 			
 		print_r($data['FTBInfo']);
