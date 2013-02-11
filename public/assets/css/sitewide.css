@@ -14,15 +14,16 @@ html,body {
 h1,h2,h3 {
 	margin:0;
 }
-a:LINK {
+
+a:link {
 	color:#3399FF;
 	text-decoration:none;
 }
-a:HOVER {
-	text-decoration:underline;
+a:visited {
+	color:#3399FF;
 }
-a:VISITED {
-	color:3399FF;
+a:hover {
+	text-decoration:underline;
 }
 
 
