@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* Navigation */
-nav {
+nav a:link {
+	color:#000 !important;
 }
 
 nav a {
@@ -30,5 +31,17 @@ nav a:VISITED {
 
 /* Hightlighting */
 nav#HomeNav a#HomeNavButton {
+	background-color:#fff !important;
+}
+
+nav#FtbNav a#FTBServerNavButton {
+	background-color:#fff !important;
+}
+
+nav#CreativeNav a#CreativeServerNavButton {
+	background-color:#fff !important;
+}
+
+nav#IrcNav a#IRCNavButton {
 	background-color:#fff !important;
 }
