@@ -41,7 +41,7 @@ class page extends CI_Controller {
 				$data['FTBError'] = "An unhandled exception has occured: ".$e;
 			}
 			
-		print_r($data['FTBInfo']);
+		#print_r($data['FTBInfo']);
 				
 		//Populate data array
 		$data['title'] = ucfirst($page);
