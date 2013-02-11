@@ -16,17 +16,16 @@ nav a {
 	border-radius:6px 6px 0 0;
 }
 
-nav a:HOVER {
-	background-color:#30F !important;
-}
-
-
 nav a:LINK {
 	text-decoration: none;
 }
 
 nav a:VISITED {
 	color:#000 !important;
+}
+
+nav a:HOVER {
+	background-color:#30F !important;
 }
 
 /* Hightlighting */
