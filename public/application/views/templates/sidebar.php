@@ -25,6 +25,8 @@
 </div>
 <?php endif; 
 
+/********************************/
+
 if(!isset($FTBError)):
 #No connection error ?>
 <div class="serverstats">
@@ -36,7 +38,8 @@ if(!isset($FTBError)):
 			echo "<li>".$Player."</li>";
 		  } ?>
 	</ul>
-	<?php 	
+	
+	<?php 
 		else:
 			echo '<p class="noplayers">No players online.</p>';
 		endif;?>

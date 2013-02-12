@@ -73,6 +73,7 @@ article {
 }
 
 #sidebar {
-	width:250px;
+	padding-left:5px;
+	width:245px;
 	float: right;
 }
