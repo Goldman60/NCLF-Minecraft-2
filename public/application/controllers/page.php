@@ -17,8 +17,6 @@ class page extends CI_Controller {
 		//Load helper Libraries
 		$this->load->helper('html');
 		
-		//test
-		
 		//Server Query stuff
 		$this->load->model('server_query_model');
 			//Creative Server
